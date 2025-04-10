@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API_BASE_URL = "http://127.0.0.1:5000/get_data";
+const API_BASE_URL = "https://daily-check-khaki.vercel.app/get_data";
 
 const countries = {
   me: "Middle East",
