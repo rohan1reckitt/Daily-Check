@@ -4,7 +4,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 from flask import request, jsonify
 from pymongo import MongoClient
-import urllib.parse
+# import urllib.parse
 from dotenv import load_dotenv
 import os
 
@@ -22,13 +22,13 @@ def fetch_mongo_data(uri, db_name, collection_name,query):
     cursor = collection.find(query)
     return cursor
 
-encoded_password = urllib.parse.quote_plus(Mongo_Pass)
-Mongo_URI =Mongo_URI1+encoded_password+Mongo_URI2
+# encoded_password = urllib.parse.quote_plus(Mongo_Pass)
+Mongo_URI =Mongo_URI1+Mongo_Pass+Mongo_URI2
 
 Database ="DailyCheckDB"
 Collection ="credentials"
 
-print(Mongo_URI)
+# print(Mongo_URI)
 
 app = Flask(__name__)
 CORS(app)  
