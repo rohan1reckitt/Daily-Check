@@ -1,5 +1,7 @@
-Flask
 flask-cors
 pymysql
 pymongo
 python-dotenv
+flask
+cryptography
+mysql-connector-python
