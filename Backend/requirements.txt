@@ -1,8 +1,9 @@
-flask-cors
+Flask-cors
 pymysql
 pymongo
 python-dotenv
 flask
-cryptography
 mysql-connector-python
+PyMySQL
 urllib3
+pandas
