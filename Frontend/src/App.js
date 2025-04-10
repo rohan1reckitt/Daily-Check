@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API_BASE_URL = "https://daily-check-khaki.vercel.app/get_data";
+const API_BASE_URL = "http://127.0.0.1:5000/get_data"
 
 const countries = {
   me: "Middle East",
@@ -21,10 +21,6 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const formatDate = (dateStr) => {
-    const [year, month, day] = dateStr.split("-");
-    return `${day}/${month}/${year}`;
-  };
 
   const checkTime = (time) => {
     const hours = time.getHours();
@@ -121,12 +117,12 @@ function App() {
 
         {/* Date Picker */}
         <input
-  type="date"
-  className="px-4 py-2 border border-gray-300 rounded-lg shadow-sm"
-  placeholder="dd/mm/yyyy"
-  value={selectedDate}
-  onChange={(e) => setSelectedDate(e.target.value)}
-/>
+          type="date"
+          className="px-4 py-2 border border-gray-300 rounded-lg shadow-sm"
+          placeholder="dd/mm/yyyy"
+          value={selectedDate}
+          onChange={(e) => setSelectedDate(e.target.value)}
+        />
 
       </div>
 

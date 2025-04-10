@@ -28,6 +28,7 @@ Mongo_URI =Mongo_URI1+encoded_password+Mongo_URI2
 Database ="DailyCheckDB"
 Collection ="credentials"
 
+print(Mongo_URI)
 
 app = Flask(__name__)
 CORS(app)  
