@@ -1,5 +1,4 @@
 Flask-cors
-pymysql
 pymongo
 python-dotenv
 flask
