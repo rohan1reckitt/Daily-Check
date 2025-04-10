@@ -230,6 +230,9 @@ def main2(connections,ind,date_str):
 	#     print(j,end='\n')
 
 
+@app.route('/')
+def home():
+	return(jsonify({"message":"Hello From server!!"}))
 
 @app.route('/get_data', methods=['POST'])
 def get_data():
